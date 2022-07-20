@@ -154,7 +154,7 @@ This is an example of a parametrized test with ``pytest-mypy-plugins``:
         - val: 1.0
           rt: builtins.float
       main: |
-        reveal_type({[ val }})  # N: Revealed type is '{{ rt }}'
+        reveal_type({{ val }})  # N: Revealed type is '{{ rt }}'
 
 Improving Type Completeness
 ===========================
